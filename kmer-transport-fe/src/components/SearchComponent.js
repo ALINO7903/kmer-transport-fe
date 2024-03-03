@@ -30,11 +30,11 @@ class SearchComponent extends React.Component {
                     </div>
                     <div class="row mb-2 justify-content-center">
                         <div class="col-12 col-lg-5 form-floating p-2">
-                            <input type="date" class="form-control" id="departure" min={new Date()} onChange={(e) => this.setState({ departure: e.target.value })} />
+                            <input type="date" class="form-control" id="departure" min={currentDate} onChange={(e) => this.setState({ departure: e.target.value, return: null })} />
                             <label for="departure">Departure</label>
                         </div>
                         <div class="col-12 col-lg-5 form-floating p-2">
-                            <input type="date" class="form-control" id="return" onChange={(e) => this.setState({ return: e.target.value })} />
+                            <input type="date" class="form-control" id="return" min={this.state.departure} onChange={(e) => this.setState({ return: e.target.value })} />
                             <label for="return" class="text-muted">Return</label><br />
                         </div>
                     </div>
