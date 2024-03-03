@@ -1,6 +1,10 @@
 import React from "react";
 
 function Navbar() {
+    localStorage.setItem("Login", false);
+    const login = localStorage.getItem("Login");
+    console.log(login);
+
 
     return (
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -20,17 +24,24 @@ function Navbar() {
                         <li class="nav-item ">
                             <a class="nav-link" aria-current="page" href="#contacts">Contacts</a>
                         </li>
+                       {
+                        login=='true' &&
+                        <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="#">Login</a>
+                        </li>
+                       } 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="bi bi-person-circle"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">My tickets</a></li>
                                 <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right"></i>&nbsp; Logout</a></li>
                             </ul>
                         </li>
+
                     </ul>
                 </div>
             </div>
