@@ -7,12 +7,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Navbar from './components/Navbar';
+import Contacts from './components/Contacts';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Navbar />
     <App />
+    <Contacts />
   </React.StrictMode>
 );
 
