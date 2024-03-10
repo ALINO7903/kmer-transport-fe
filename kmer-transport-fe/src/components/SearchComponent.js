@@ -45,7 +45,7 @@ class SearchComponent extends React.Component {
                         </div>
                     </div>
                     <div class="row form-floating mt-3 justify-content-center">
-                        <a class="btn btn-secondary btn-lg">get your tickets</a>
+                        <a class="btn btn-secondary btn-lg" href="/results">get your tickets</a>
                     </div>
                 </div>
             </form>

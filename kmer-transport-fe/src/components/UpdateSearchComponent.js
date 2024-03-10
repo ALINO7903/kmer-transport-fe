@@ -41,7 +41,7 @@ export default class UpdateSearchComponent extends React.Component {
                             <input type="date" class="form-control"></input>
                         </div>
                         <div class="col-sm-7 col-lg-1 mb-1">
-                            <input type="number" class="form-control"></input>
+                            <input type="number" min="1" class="form-control" placeholder="1"></input>
                         </div>
                         <div class="col-sm-7 col-lg-1 d-flex justify-content-center" >
                             <button class="btn btn-dark btn-lg"><i class="bi bi-search"></i></button>

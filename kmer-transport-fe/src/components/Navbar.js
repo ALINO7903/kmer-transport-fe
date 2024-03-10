@@ -25,20 +25,20 @@ function Navbar() {
                             <a class="nav-link" aria-current="page" href="#contacts">Contacts</a>
                         </li>
                         {
-                            login == 'false' &&
+                            login === 'false' &&
                             <li class="nav-item ">
-                                <a class="nav-link active" aria-current="page" href="#">Login</a>
+                                <a class="nav-link active" aria-current="page" href="/login">Login</a>
                             </li>
                         }
                         {
-                            login == 'true' &&
+                            login === 'true' &&
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="bi bi-person-circle"></i>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Profile</a></li>
-                                    <li><a class="dropdown-item" href="#">My tickets</a></li>
+                                    <li><a class="dropdown-item" href="/my-tickets">My tickets</a></li>
                                     <li><hr class="dropdown-divider" /></li>
                                     <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right"></i>&nbsp; Logout</a></li>
                                 </ul>
